@@ -11,10 +11,10 @@ const Navbar = (props: Props) => {
   console.log(pathName);
 
   return (
-    <nav className="flex justify-between items-center px-4 py-6 fixed w-full ">
+    <nav className="flex justify-between items-center px-4 py-6 fixed w-full  top-0 ">
       <Link
         href={"/"}
-        className="flex justify-between items-center space-x-4 text-white"
+        className="flex justify-between items-center space-x-4 text-black"
       >
         <Image
           src={

@@ -14,7 +14,7 @@ export default function Login({}: Props) {
           <label>Email</label>
           <input
             type="email"
-            className="outline-none w-full py-2"
+            className="outline-none w-full py-2 px-4"
             value={email}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setEmail(e.target.value)
@@ -25,7 +25,7 @@ export default function Login({}: Props) {
           <label>Password</label>
           <input
             type="password"
-            className="outline-none w-full py-2"
+            className="outline-none w-full py-2 px-4"
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setPassword(e.target.value)
             }

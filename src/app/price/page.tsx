@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Pricing() {
   return (
     <main className="bg-slate-500">
-      <section className="flex flex-col gap-8 md:flex-row items-center w-screen h-screen justify-center text-white px-8">
-        <div>
+      <section className="flex flex-col gap-8 md:flex-row items-center w-screen h-screen justify-center text-white px-2 max-w-7xl mx-auto">
+        <div className="w-1/2">
           <h2>
             Simple pricing.
             <br />
@@ -26,6 +26,7 @@ export default function Pricing() {
           width={400}
           height={400}
           alt="pricing"
+          className="w-1/2"
         />
       </section>
     </main>
