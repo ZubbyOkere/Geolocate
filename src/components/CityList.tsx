@@ -7,8 +7,8 @@ const CityList = ({ id }: { id: number }) => {
   const { cities } = useCitiesHook();
   const searchParams = useSearchParams();
 
-  const lat = searchParams.get("lat");
-  const lng = searchParams.get("lng");
+  // const lat = searchParams.get("lat");
+  // const lng = searchParams.get("lng");
 
   //   date formatter
   const formatDate = (date: string) =>

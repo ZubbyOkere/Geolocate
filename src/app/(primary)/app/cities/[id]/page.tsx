@@ -1,5 +1,6 @@
 "use client";
 
+import BackButton from "@/components/BackButton";
 import CitiesLoader from "@/components/CitiesLoader";
 import { useCitiesHook } from "@/contexts/CitiesContext";
 import { useParams, useSearchParams } from "next/navigation";
@@ -28,15 +29,21 @@ export default function CityId({ params }: { params: ParamsProps }) {
   }
 
   const { emoji, cityName, country, notes } = currentCity;
+
   return (
     <div>
-      <span>
-        {emoji} welcome to {cityName}
-      </span>
-      <p>{params.id}</p>
-      <span>
-        {lat}, {lng}
-      </span>
+      <h1>
+        {emoji} Welcome to {cityName}
+      </h1>
+      <p>Country: {country}</p>
+      <p>Notes: {notes}</p>
+      <p>City ID: {params.id}</p>
+      <p>
+        Latitude: {lat}, Longitude: {lng}
+      </p>
+      <button>
+        <BackButton />
+      </button>
     </div>
   );
 }
